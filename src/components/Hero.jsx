@@ -15,23 +15,23 @@ export default function Hero() {
       <div className="container hero-container">
         <div className="hero-badge-glass">
           <Sparkles size={14} className="icon-pulse text-blue" />
-          <span>AI Product Management & Agent Experience</span>
+          <span>AI 原生产品建造者 · iOS 独立开发</span>
         </div>
 
         <h1 className="hero-title">
-          <span className="text-dim">让复杂 AI 能力</span>
+          <span className="text-dim">用 AI 工具独立驱动全栈开发</span>
           <br />
-          <span className="text-liquid-glass">随口一说，即成现实</span>
+          <span className="text-liquid-glass">从场景洞察到 iOS 原生真机交付</span>
         </h1>
 
         <p className="hero-subtitle">
-          我是 <span className="highlight-text">{profile.name} ({profile.enName})</span>，一名专注于大模型与智能体落地的 <span className="highlight-tag">AI 产品经理</span>。
-          秉持清晰克制的做减法哲学，以深刻的工程理解与敏捷 AI 工具链，驱动产品从真实场景痛点走向高品质真机交付。
+          我是 <span className="highlight-text">{profile.name} ({profile.enName})</span>，计算机工学背景的 <span className="highlight-tag">AI 原生建造者</span>。
+          熟练运用前沿 AI 工具链独立写代码、调逻辑并交付 iOS 原生应用；坚持极简做减法设计哲学，把想法真正做成能跑在真机上的好产品。
         </p>
 
         <div className="hero-actions">
           <button onClick={() => scrollTo('projects')} className="btn-primary-lg">
-            <span>浏览精选作品</span>
+            <span>浏览独立开发作品</span>
             <Terminal size={18} />
           </button>
           <button onClick={() => scrollTo('contact')} className="btn-secondary-lg">
