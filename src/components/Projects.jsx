@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import { Layers, Store, GraduationCap, ChevronLeft, ChevronRight, Eye, Image as ImageIcon } from 'lucide-react';
+import { Layers, Store, GraduationCap, ChevronLeft, ChevronRight, Eye, Image as ImageIcon, ExternalLink } from 'lucide-react';
 import { resumeData } from '../data/resumeData';
 
 export default function Projects() {
@@ -108,15 +108,29 @@ export default function Projects() {
                       ))}
                     </div>
 
-                    {hasScreenshots && (
-                      <button
-                        onClick={() => toggleExpand(proj.id)}
-                        className={`btn-screenshot-toggle ${isExpanded ? 'active' : ''}`}
-                      >
-                        <ImageIcon size={15} />
-                        <span>{isExpanded ? '折叠真机截图' : `展开真机截图 (${proj.screenshots.length}张)`}</span>
-                      </button>
-                    )}
+                    <div className="project-action-group">
+                      {proj.demoUrl && (
+                        <a
+                          href={proj.demoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn-demo-link"
+                        >
+                          <ExternalLink size={14} />
+                          <span>体验链接</span>
+                        </a>
+                      )}
+
+                      {hasScreenshots && (
+                        <button
+                          onClick={() => toggleExpand(proj.id)}
+                          className={`btn-screenshot-toggle ${isExpanded ? 'active' : ''}`}
+                        >
+                          <ImageIcon size={15} />
+                          <span>{isExpanded ? '折叠真机截图' : `展开真机截图 (${proj.screenshots.length}张)`}</span>
+                        </button>
+                      )}
+                    </div>
                   </div>
                 </div>
 

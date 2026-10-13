@@ -71,9 +71,9 @@ export const resumeData = {
       screenshots: [
         withBase("/screenshots/speakbill/1.png"),
         withBase("/screenshots/speakbill/2.png"),
-        withBase("/screenshots/speakbill/3.png"),
-        withBase("/screenshots/speakbill/4.png")
+        withBase("/screenshots/speakbill/3.png")
       ],
+      demoUrl: "https://testflight.apple.com/join/ZmjTmNCs",
       badgeColor: "#007AFF",
       description: "针对传统记账软件分类层级繁琐、输入臃肿的痛点，打造“随口一说、AI 自动分类记账”的极简体验。主界面聚焦当月预算核心指标，隐藏冗余图表与杂乱留白，将记账耗时压缩至 3 秒以内。",
       highlights: [
@@ -96,9 +96,9 @@ export const resumeData = {
         withBase("/screenshots/dailytalk/1.png"),
         withBase("/screenshots/dailytalk/2.png"),
         withBase("/screenshots/dailytalk/3.png"),
-        withBase("/screenshots/dailytalk/4.png"),
-        withBase("/screenshots/dailytalk/5.png")
+        withBase("/screenshots/dailytalk/4.png")
       ],
+      demoUrl: "https://testflight.apple.com/join/mH94T2B8",
       badgeColor: "#8B5CF6",
       description: "破除应试死记硬背，专注于跨地域日常生活高频场景（点餐、打车、问路、求助）的张口即用地道表达训练。配套母语真人发音、注音与弱读实战提示。",
       highlights: [
